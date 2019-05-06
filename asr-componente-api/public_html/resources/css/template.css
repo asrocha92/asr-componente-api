@@ -1,0 +1,223 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23 Apr 2019, 19:16:29
+    Author     : alex
+*/
+
+button, input {
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+.ui-as-aj {
+    margin: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.ui-as-texteditor {
+
+}
+.ui-as-btn1 {
+    text-align: center;
+    border: 1px solid rgb(0, 152, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 5px;
+    font-size: 100%;
+    font-weight: bold;
+}
+.ui-as-btn1:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.ui-as-btn2 {
+    text-align: center;
+    border: 1px solid rgb(0, 152, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    font-size: 100%;
+    font-weight: bold;
+}
+.ui-as-btn2:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.ui-as-btn3 {
+    text-align: center;
+    border: 1px solid rgb(0, 152, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 100%;
+    font-size: 100%;
+    font-weight: bold;
+}
+.ui-as-btn3:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.ui-as-btn4 {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 2px 3px 2px 3px;
+    padding: 5px;
+    text-decoration: none;
+}
+.ui-as-btn4:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.ui-as-btn5 {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 1px 3px 1px 3px;
+    padding: 4px;
+    text-decoration: none;
+}
+.ui-as-btn5:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.ui-as-btn6 {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 1px 3px 1px 3px;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+.ui-as-btn6:before {
+    position: relative;
+    padding-right: 5px !important;
+    font-size: 10px;
+}
+.ui-as-btn6:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+.add-slide-apresetation {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.55);
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 2px 3px 2px 3px;
+    padding: 5px;
+    text-decoration: none;
+    width: -webkit-fill-available;
+}
+.add-slide-apresetation:hover {
+    background: rgb(0, 152, 255);
+    cursor: pointer;
+}
+
+.ui-as-img1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+}
+.ui-as-video1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+}
+.ui-as-model-hv {
+    position: relative;
+    top: 8px;
+    z-index: 10;
+    width: fit-content;
+}
+.ui-as-model-hv-ct {
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0,0,0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+    padding: 4px 4px 4px 4px;
+    display: flex !important;
+    border-radius: 3px;
+}
+
+.ui-as-inputtext {
+    margin-top: 5px;
+    margin-bottom: 1px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.85);
+}
+.ui-as-label1 {
+
+}
+.ui-tags-apresentation {
+    overflow: auto;
+    position: relative;
+    height: 580px;
+    display: flow-root;
+    height: inherit;
+    padding-bottom: 40px;
+}
+.ui-tags-apresentation > div {
+    display: -webkit-inline-box;
+    width: 108px;
+    height: 133px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px 0px;
+    background: aliceblue;
+    padding: 4px;
+}
+.ui-ubs-sl-img {
+    width:100px; 
+    height:100px;
+}
+
+
+/**
+ * Sobreescrevendo a API quill editor
+ */
+.ql-bubble {
+    box-sizing: border-box;
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+    cursor: text;
+}
+.ql-editor {
+    box-sizing: border-box;
+    line-height: 1.42;
+    width: -webkit-fill-available !important;
+    height: -webkit-fill-available !important;
+    padding: 0px !important;
+}
+.ql-bubble * {
+    z-index: 11;
+}
+
+
+.ui-submn-cfs {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: -webkit-inline-box;
+}
+.ui-count {
+    font-weight: bold;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+Created on : 23 Apr 2019, 19:16:29
+Author     : Alex S. R.
+-->
+<html>
+    <head>
+        <title>asr-componente-api</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="icon" type="imagem/png" href="resources/img/logo.png">
+
+        <!-- Include the ASR library -->
+        <link rel="stylesheet" href="resources/css/style.css"/>
+        <link rel="stylesheet" href="resources/css/template.css"/>
+        <link rel="stylesheet" href="lib/animation/animation.css">
+        <script type="text/javascript" src="lib/ag/angular.min.js"></script>
+        <script type="text/javascript" src="lib/ag/angular-animate.js"></script>
+        <script type="text/javascript" src="lib/ag/angular-route.js"></script>
+
+        <!-- Include the JQuery library -->
+        <script type="text/javascript" src="lib/jq/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="lib/jq/jquery-ui.js"></script>
+        <link rel="stylesheet" href="lib/jq/jquery-ui.css">
+
+        <!-- Include the Quill library -->
+        <link  rel="stylesheet" href="lib/quill/quill.snow.css"/>
+        <link rel="stylesheet" href="lib/quill/quill.bubble.css">
+        <script type="text/javascript" src="lib/quill/quill.js"></script>
+
+        <!-- Include the Bootstrap library -->
+        <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+
+        <!-- Include the Fontawesome library -->
+        <link rel="stylesheet" href="lib/fontawesome/icon.css"/>
+
+        <script>
+            $(function () {
+
+                var abilitarDragAndDropEblel = function () {
+                    $(".ui-componet-drag").draggable({
+                        cursor: "move",
+                        revert: true,
+                        helper: "clone",
+//                        snap: ".painel-education-md",
+                        cursorAt: {top: 56, left: 56}
+                    });
+                    $("#accordion").accordion({
+                        heightStyle: "content"
+                    });
+                };
+
+                abilitarDragAndDropEblel();
+            });
+        </script>
+
+    </head>
+    <body ng-app="app" ng-controller="Principal">
+
+        <div class="ui-as-mod">
+            <div id="accordion" class="ui-as-accordion">
+                <h3>Textos</h3>
+                <div>
+                    <label>Texto</label>
+                    <div class="ui-componet-drag ui-widget-content">
+                        <div class="ui-as-aj ui-as-texteditor"></div>
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Botões</h3>
+                <div>
+                    <label>Botão1</label>
+                    <div class="ui-componet-drag ui-widget-content">
+                        <button class="ui-as-aj ui-as-btn ui-as-btn1">1</button>
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Botão2</label>
+                    <div class="ui-componet-drag ui-widget-content">
+                        <button class="ui-as-aj ui-as-btn ui-as-btn2">2</button>
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Botão3</label>
+                    <div class="ui-componet-drag ui-widget-content">
+                        <button class="ui-as-aj ui-as-btn ui-as-btn3">3</button>
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Outros</h3>
+                <div>
+                    <label>Imagem</label>
+                    <div class="ui-componet-drag ui-widget-content">
+                        <img class="ui-as-img ui-as-aj ui-as-img1" src=""/>
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                                <button class="ui-as-btn4 fas fa-plus" method="addimg"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Video</label>
+
+                    <div class="ui-componet-drag ui-widget-content">
+                        <object data="https://www.youtube.com/embed/TqnlZ79KYZ8" class="ui-as-aj ui-as-video ui-as-video1"></object>
+                        <!--<video controls src="https://www.youtube.com/embed/TqnlZ79KYZ8" class="ui-as-aj ui-as-video ui-as-video1"></video>-->
+                        <div style="display: none;" class="ui-as-model-hv">
+                            <div class="ui-as-model-hv-ct">
+                                <button class="ui-as-btn4 fas fa-trash-alt" method="remove"></button>
+                                <button class="ui-as-btn4 fas fa-wrench" method="changeconf"></button>
+                                <button class="ui-as-btn4 fas fa-plus" method="addvideo"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Templates</h3>
+                <div>
+                </div>
+            </div>
+            <div class="ui-as-editpp">
+                <div class="ui-as-editpp-mn">
+                    <label class="ui-as-label1">largura</label>
+                    <input ng-model="property.width" type="number" placeholder="Largura" class="ui-as-inputtext" ng-change="atualizarProperty('width', property.width + 'px', false)"/>
+                </div>
+                <div class="ui-as-editpp-mn">
+                    <label class="ui-as-label1">altura</label>
+                    <input ng-model="property.height" type="number" placeholder="Altura" class="ui-as-inputtext" ng-change="atualizarProperty('height', property.height + 'px', false)"/>
+                </div>
+                <div class="ui-as-editpp-mn">
+                    <label class="ui-as-label1">cor da fonte</label>
+                    <input ng-model="property.color" type="color" placeholder="Cor" class="ui-as-inputtext" ng-change="atualizarProperty('color', property.color, true)"/>
+                </div>
+                <div class="ui-as-editpp-mn">
+                    <label class="ui-as-label1">cor do fundo</label>
+                    <input ng-model="property.background" type="color" placeholder="Cor" class="ui-as-inputtext" ng-change="atualizarProperty('background', property.background, true)"/>
+                </div>
+                <div class="ui-as-editpp-mn">
+                    <label class="ui-as-label1">Texto</label>
+                    <input ng-model="property.texto" type="text" placeholder="Texto" class="ui-as-inputtext" ng-change="atualizarProperty('texto', property.texto, true)"/>
+                </div>
+                <!--                <div class="ui-as-editpp-mn">
+                                    <label class="ui-as-label1">box-shadow</label>
+                                    <div>
+                                        <input type="number" placeholder="x" class="ui-as-inputtext"/>
+                                        <input type="number" placeholder="y" class="ui-as-inputtext"/>
+                                        <input type="number" placeholder="z" class="ui-as-inputtext"/>
+                                        <input type="number" placeholder="j" class="ui-as-inputtext"/>
+                                        <input type="color" placeholder="Cor" class="ui-as-inputtext" />
+                                    </div>
+                                </div>-->
+            </div>
+
+            <div class="painel-education">
+                <div class="ui-mn-conf-ap">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="input-group-append">
+                                <input ng-model="slider.nome" type="text" class="ui-as-inputtext" style="width: 100%" placeholder="Nome da slider"/>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" ng-click="newObjView()">Novo</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="input-group">
+                                <select class="custom-select" id="selectAnimation"  ng-model="slider.animation">
+                                    <option value="flipInY">flipInY</option>
+                                    <option value="slideInLeft">SlideInLeft</option>
+                                    <option value="slideInRight">slideInRight</option>
+                                    <option value="slideInDown">slideInDown</option>
+                                    <option value="slideInUp">slideInUp</option>
+                                    <option value="rotateInDownRight">rotateInDownRight</option>
+                                    <option value="rotateInUpLeft">rotateInUpLeft</option>
+                                    <option value="bounceInRight">bounceInRight</option>
+                                    <option value="zoomIn">zoomIn</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button id="preview-animation" class="btn btn-outline-secondary" type="button">Visualizar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="container-create-apresentation" class="droppable painel-education-md a4p">
+
+                </div>
+            </div>
+
+            <div id="container" class="ui-as-editpp" style="width: -webkit-fill-available;">
+                <div class="ui-add-ap">
+                    <button type="button" class="add-slide-apresetation" ng-click="salvarTudo()">Salvar tudo</button>
+                    <button id="add-slide-apresetation" type="button" class="add-slide-apresetation">Adicionar</button>
+                </div>
+                <div class="ui-tags-apresentation">
+                    <div ng-repeat="s in sliders track by $index">
+                        <img class="ui-ubs-sl-img" src="{{s.print}}"/>
+                        <div class="ui-submn-cfs">
+                            <spa clss="ui-count">[{{$index + 1}} - {{s.index}}]</spa>
+                            <button class="ui-as-btn5 fas fa-trash-alt" ng-click="removerSlider($index, 'sliders')"></button>
+                            <button class="ui-as-btn5 fas fa-wrench"></button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!--Container de add img-->
+            <div id="addimg" class="container-overflow" style="display: none;">
+                <div class="body-over">
+                    <div class="container-flow">
+                        <div class="o-titulo bd-botton">
+                            Adicionar Imagem
+                        </div>
+                        <div class="o-content">
+                            <div>
+                                <label class="ui-as-label1">URL: </label>
+                                <input ng-model="add.img" type="text" placeholder=" URL da imagem" class="ui-as-inputtext" style="width: 250px;"/>
+                            </div>
+                        </div>
+                        <div class="o-footer bd-top">
+                            <button class="ui-as-btn6 fas fa-plus" ng-click="atualizarImg(add.img)">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Container de add img-->
+            <div id="addvideo" class="container-overflow" style="display: none;">
+                <div class="body-over">
+                    <div class="container-flow">
+                        <div class="o-titulo bd-botton">
+                            Adicionar Link do Video
+                        </div>
+                        <div class="o-content">
+                            <div>
+                                <label class="ui-as-label1">URL: </label>
+                                <input ng-model="add.video" type="text" placeholder=" URL do video" class="ui-as-inputtext" style="width: 250px;"/>
+                            </div>
+                        </div>
+                        <div class="o-footer bd-top">
+                            <button class="ui-as-btn6 fas fa-plus" ng-click="atualizarVideo(add.video)">Salvar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Include the ASR library -->
+            <!--<script type="text/javascript" src="resources/js/editorAS.js"></script>-->
+            <script type="text/javascript" src="resources/js/app.js"></script>
+            <script type="text/javascript" src="resources/js/app.service.js"></script>
+            <script type="text/javascript" src="resources/js/app.controller.js"></script>
+            <!-- Include the Html2canvas library -->
+            <script type="text/javascript" src="lib/html2canvas/html2canvas.js"></script>
+
+
+    </body>
+</html>

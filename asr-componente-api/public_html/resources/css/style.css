@@ -1,0 +1,170 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Apr 2019, 20:57:29
+    Author     : alex
+*/
+
+html {
+    margin: 0;
+}
+body {
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+}
+.painel-education {
+    padding: 0px 0px;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.painel-education-md {
+    border: 0px solid rgba(0, 0, 0, 1);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+}
+.a4p {
+    height: 595px;
+    width: 842px;
+}
+
+.ui-widget-content {
+    border: 1px solid rgba(204, 204 ,204, 0.5);
+    padding: 5px;
+    height: auto;
+    width: auto;
+
+}
+.ui-resizable-helper { 
+    border: 1.5px dotted rgba(255, 3, 3, 0.5);
+}
+
+.ui-componet-drag-content {
+    border: 1px solid rgba(0, 105, 152, 0.28)!important;
+    cursor: move;
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
+}
+
+#accordion {width: 75px;}
+
+.content_editors {
+    border: 1px solid rgba(204, 204, 204, 1);
+}
+
+.ui-componet-drag {
+    height: 25px;
+    cursor: move;
+}
+.ui-as-mod {
+    display: flex;
+}
+.ui-as-accordion {
+    padding: 2px 2px 0px 2px !important;
+    position: relative;
+    height: -webkit-fill-available;
+}
+.ui-as-editpp {
+    padding: 0px 0px 20px 0px;
+    border-right: 1px solid rgba(204, 204, 204, 0.6);
+    border-left: 1px solid rgba(204, 204, 204, 0.6);
+    position: relative;
+    height: -webkit-fill-available;
+    background-image: linear-gradient(to bottom, #6ac0ee, #45b3f5, #17a5fa, #0096fe, #0085ff);
+}
+.ui-as-editpp-mn {
+    display: grid;
+    margin: 0;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    padding: 6px;
+}
+.ui-widget {
+    font-size: 9px !important;
+}
+.ui-add-ap {
+    padding: 6px 2px;
+}
+.ui-mn-conf-ap {
+    padding: 5px 0px 15px 0px; 
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px !important;
+  height: 1px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  width: 1px !important;
+  height: 1px !important;
+  background: rgba(0,0,0,0.3); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  width: 1px !important;
+  height: 1px !important;
+  background: rgba(0,0,0,0.5); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  width: 1px !important;
+  height: 1px !important;
+  background: rgba(0,0,0,0.7); 
+}
+
+.container-overflow {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.35);
+}
+.container-overflow .body-over {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-flow {
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.o-titulo {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+}
+.o-content {
+    padding: 10px;
+}
+.o-footer {
+    padding: 10px;
+    text-align: right;
+}
+
+.bd-botton {
+    border-bottom: 1px solid rgba(204,204,204, 1);
+}
+.bd-top {
+    border-top: 1px solid rgba(204,204,204, 1);
+}
